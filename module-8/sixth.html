@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic responsiveness</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .food{
+            border: solid black 2px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        img{
+            width: 50%;
+            
+        }
+/* simple media query */
+        @media screen and (max-width: 576px) {
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.food*12>img[src="images/beach.jpg"]+h3{image view - $}+p{price of image view- \$$00}+p{lorem50} -->
+
+    <div class="container">
+        <div class="food">
+            <img src="../images/bluesky.jpg" alt="">
+            <h3>image view - 1</h3>
+            <p>price of image view- $100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aspernatur cumque incidunt eligendi, id est, minus veritatis neque quam voluptate voluptatem minima in ipsam ad deleniti impedit, repudiandae odit qui error beatae. Explicabo nesciunt saepe libero reprehenderit vel est provident eaque tempora at, voluptatibus velit ut incidunt repellat enim similique!</p>
+        </div>
+        <div class="food">
+            <img src="../images/bluesky.jpg" alt="">
+            <h3>image view - 2</h3>
+            <p>price of image view- $200</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut doloribus voluptas qui incidunt sapiente animi veniam optio nulla, aliquid, earum reiciendis ex eius inventore odio! Ex quod similique excepturi aperiam magnam reprehenderit impedit minus quis, officia debitis voluptatem dolorem beatae, mollitia expedita consequatur repellat ratione ipsum sed, tempore ipsam a?</p>
+        </div>
+        <div class="food">
+            <img src="../images/bluesky.jpg" alt="">
+            <h3>image view - 3</h3>
+            <p>price of image view- $300</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate unde fugit perferendis et laudantium, praesentium, voluptatum repudiandae tenetur architecto ab similique nulla eius, non eveniet placeat dicta consequuntur expedita necessitatibus? Alias rerum dolorem ad, nemo vero soluta hic dolor assumenda quo iusto atque voluptate doloremque inventore ipsum quisquam! Consequuntur, atque?</p>
+        </div>
+        <div class="food">
+            <img src="../images/bluesky.jpg" alt="">
+            <h3>image view - 4</h3>
+            <p>price of image view- $400</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos debitis harum voluptatem nemo nostrum quos ipsa voluptate eligendi autem veniam consequuntur cumque, eos pariatur consequatur ad molestiae totam. Nemo odit exercitationem vitae optio voluptate pariatur, quia adipisci voluptates suscipit non natus distinctio explicabo commodi earum quae? Accusantium, necessitatibus exercitationem.</p>
+        </div>
+        <div class="food">
+            <img src="../images/bluesky.jpg" alt="">
+            <h3>image view - 5</h3>
+            <p>price of image view- $500</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, explicabo recusandae deleniti enim illum repellendus sed impedit est omnis! Suscipit odio omnis iste blanditiis voluptatem nemo reprehenderit dolorum iure veritatis debitis qui voluptates explicabo consequuntur harum provident, quis totam sint in voluptatibus ea voluptate aperiam autem eligendi. Voluptates, quaerat quam.</p>
+        </div>
+        <div class="food">
+            <img src="../images/bluesky.jpg" alt="">
+            <h3>image view - 6</h3>
+            <p>price of image view- $600</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corrupti maiores error! Facilis impedit sint nulla similique accusamus aliquid rem, ipsa quibusdam, voluptates adipisci quis nemo explicabo culpa cumque architecto deserunt consequatur fuga praesentium odit! Accusamus aliquam atque ratione molestiae fugiat. Totam aperiam ullam ab ad, facere vero fuga ducimus!</p>
+        </div>
+        <div class="food">
+            <img src="../images/bluesky.jpg" alt="">
+            <h3>image view - 7</h3>
+            <p>price of image view- $700</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore qui eligendi hic illum ex iure, ipsam ducimus aperiam dolorum reprehenderit molestias placeat quibusdam quo mollitia. Nostrum possimus corrupti, ipsum recusandae accusantium tempora ex blanditiis ea sunt soluta non iste aut, impedit laborum repudiandae velit ab odit commodi quos enim.</p>
+        </div>
+        <div class="food">
+            <img src="../images/bluesky.jpg" alt="">
+            <h3>image view - 8</h3>
+            <p>price of image view- $800</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet, porro omnis aut id similique nulla dolore voluptatum hic nemo fugit dicta sunt placeat minima quam vero, optio ex deleniti, eaque non! Blanditiis, aliquid officiis culpa quis quidem ea, assumenda nulla sunt doloremque eos tempore eius corporis reiciendis incidunt architecto?</p>
+        </div>
+        <div class="food">
+            <img src="../images/bluesky.jpg" alt="">
+            <h3>image view - 9</h3>
+            <p>price of image view- $900</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, distinctio molestiae qui repudiandae voluptates maiores aliquam nostrum consequatur non minus praesentium ullam officia quibusdam unde id veniam culpa expedita repellendus iure provident quos sint natus. Fugiat voluptatum itaque facere possimus mollitia, accusamus dolore praesentium autem? Dicta quasi unde iste. Sint.</p>
+        </div>
+        <div class="food">
+            <img src="../images/bluesky.jpg" alt="">
+            <h3>image view - 10</h3>
+            <p>price of image view- $1000</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo obcaecati, aliquid blanditiis cum distinctio temporibus fugiat autem esse inventore nesciunt expedita officia soluta magnam incidunt harum quos ab impedit consectetur provident id iure. Molestiae, maxime, exercitationem ad temporibus, hic corrupti quos odit similique ipsa at voluptatem quidem! Laudantium, veritatis. Consequatur?</p>
+        </div>
+        <div class="food">
+            <img src="../images/bluesky.jpg" alt="">
+            <h3>image view - 11</h3>
+            <p>price of image view- $1100</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias assumenda dolores quae molestias facere quos nulla veritatis vel suscipit optio, hic perferendis totam distinctio fuga laborum ad adipisci, commodi debitis aut eveniet consequatur, amet repellat fugit! Consequuntur sapiente hic officiis repellendus culpa ipsam unde, in sit quidem explicabo quis eligendi?</p>
+        </div>
+        <div class="food">
+            <img src="../images/bluesky.jpg" alt="">
+            <h3>image view - 12</h3>
+            <p>price of image view- $1200</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit magni voluptatibus ullam maxime officia vero hic recusandae voluptatem distinctio! Iste, aliquam vitae non cum quibusdam quae fuga, eaque, officia repudiandae quia ullam incidunt dolor? Consequatur facere, enim laboriosam commodi ad nemo magni est accusamus quod iste recusandae doloribus architecto!</p>
+        </div>
+    </div>
+</body>
+</html>
