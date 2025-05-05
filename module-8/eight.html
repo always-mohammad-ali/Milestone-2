@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 things about responsiveness</title>
+    <style>
+        .img-container{
+            display: flex;
+            border: 2px solid red;
+            height: 1000px;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-container div{
+            width: 50%;
+            border: 1px yellow solid;
+            margin: 20px;
+        }
+        .img-container img{
+            width: 100%;
+            
+        }
+        @media screen and (max-width:620px) {
+            .img-container{
+                flex-direction: column-reverse;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>7 things to know for responsiveness</h2>
+    <ul>
+        <li>1. use css units like em, rem for responsiveness</li>
+        <li>2. use media screen and max-min width for controlling multiple screen size</li>
+        <li>3. for only 2 columns, you can use flex</li>
+        <li>4. but for multiple columns, you should use grid layout</li>
+        <li>5. viewport meta tag</li>
+        <li>6. image fluid</li>
+        <li>7. menu after learning js</li>
+    </ul>
+    <div class="img-container">
+        <div class="img"><img src="../images/food.jpeg" alt=""></div>
+        <div class="img"><img src="../images/food.jpeg" alt=""></div>
+    </div>
+</body>
+</html>
