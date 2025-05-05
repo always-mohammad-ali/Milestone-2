@@ -28,6 +28,22 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
        }
+
+       /* media responsive /query */
+       @media screen and (max-width:676px) {
+        .row{
+            flex-direction: column;
+            margin: 5px;
+            height: 100%;
+        }
+        .grid-image{
+            grid-template-columns: 1fr;
+        }
+       }
+
+       @media screen and (min-width:676px) and (max-width:850px) {
+        
+       }
     </style>
 </head>
 <body>
