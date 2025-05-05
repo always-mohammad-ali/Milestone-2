@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive web layout</title>
+    <style>
+        .container{
+            border: solid 1px salmon;
+            display: flex;
+            justify-content:space-around;
+            height: 450px;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .box{
+            border: 2px dotted green;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe magni nihil soluta explicabo doloremque expedita molestiae aliquam reprehenderit voluptatum repudiandae corrupti placeat obcaecati, similique facilis quia consectetur recusandae nemo eveniet dolorum aliquid sit, laudantium delectus? Eaque officiis quo amet similique saepe sapiente. Molestiae voluptatem sapiente harum quasi sit, magnam ipsa?</p>
+   <h1>Flexbox Layout</h1>
+   <div class="container">
+    <div class="box">BOX-1</div>
+    <div class="box">BOX-2</div>
+    <div class="box">BOX-3</div>
+    <div class="box">BOX-4</div>
+    <div class="box">BOX-5</div>
+    <div class="box">BOX-6</div>
+    <div class="box">BOX-7</div>
+    <div class="box">BOX-8</div>
+    <div class="box">BOX-9</div>
+   </div>
 </body>
 </html>
