@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <style>
+      .header, .nav, .main, .footer, .sidebar, .advertise{
+        background-color: bisque;
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .header{
+        grid-area: header;
+      }
+      .nav{
+        grid-area: nav;
+      }
+      .advertise{
+        grid-area: advertise;
+      }
+      .footer{
+        grid-area: footer;
+      }
+      .sidebar{
+        grid-area: sidebar;
+      }
+      .main{
+        grid-area: main;
+      }
+      
+      .container{
+        display: grid;
+        gap: 20px;
+        grid-template-areas: 
+        "header header header header"
+        "nav main main sidebar"
+        "nav main main advertise"
+        "footer footer footer footer"
+        ;
+      }
+
+      @media screen and (max-width:576px) {
+        .container{
+            grid-template-areas: 
+            "header"
+            "advertise"
+            "sidebar"
+            "nav"
+            "main"
+            "footer"
+            ;
+        }
+      }
+      @media  screen and (min-width:576px) and (max-width:976px) {
+        .container{
+            grid-template-areas: 
+            "header header header"
+            "nav nav nav"
+            "sidebar main main"
+            "advertise footer footer"
+            ;
+        }
+      }
+
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h1>The Header</h1>
+        
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="">Nav 1 </a></li>
+            <li><a href="">Nav 2</a></li>
+            <li><a href="">Nav 3</a></li>
+        </ul>
+        </nav>
+    <main class="main">
+        <article>
+            <h3>Main Article 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, explicabo! Necessitatibus quas enim cumque iusto ipsa qui facilis nulla animi minima tempora magnam, nostrum dolor facere! Iusto, cumque ut! Consequuntur?</p>
+        </article>
+        <article>
+            <h3>Main Article 2</h3>
+            <p>Quis in vel ad doloribus illum soluta facilis quam voluptatem ab id alias temporibus recusandae fugit, enim nostrum quae eveniet explicabo? Corrupti minima quos recusandae dolorem nulla quisquam perspiciatis vel.</p>
+        </article>
+    </main>
+    <aside>
+        <div class="sidebar">
+            <h4>Sidebar</h4>
+        </div>
+    </aside>
+    <aside>
+        <div class="advertise">
+            <h4>advertise</h4>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <h3>the footer</h3>
+    </footer>
+    
+</body>
+</html>
